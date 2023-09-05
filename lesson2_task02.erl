@@ -8,5 +8,5 @@ but_last([],A,B) when A =/= [] ->
   [A,B];
 but_last([H|T],_,B) -> 
   but_last(T,B,H);
-but_last(L,[],_) ->
+but_last(_L,[],_) ->
   wrong_arguments.
